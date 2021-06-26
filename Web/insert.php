@@ -41,8 +41,8 @@
 
     <div class="container">
         <ol class="breadcrumb">
-            <li><a href="trangchu.php">Trang chủ</a></li>
-            <li><a href="">Loại Acc</a></li>
+            <li><a href="admin.php">Admin</a></li>
+            <li><a href="insert.php">Thêm Acc</a></li>
 
         </ol>
     </div>
@@ -53,7 +53,7 @@
                 <ul>
                     <h3>QUẢN LÝ</h3>
                     <li><a href="">Acc</a></li>
-                    <li><a href="">Khách hàng</a></li>
+
                     <li><a href="">Phản hồi</a></li>
 
                 </ul>

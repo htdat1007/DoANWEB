@@ -37,25 +37,22 @@
 </head>
 
 <body>
+
   <?php include '../config/db.php';
   ?>
   <div class="container">
     <ol class="breadcrumb">
-      <li><a href="index.php">Trang chủ</a></li>
+      <li><a href="admin.php">Admin</a></li>
       <li><a href="">Danh sách</a></li>
-
     </ol>
   </div>
   <div class="container">
     <div class="col-md-3">
       <div class="categories">
-
         <ul>
           <h3>QUẢN LÝ</h3>
-          <li><a href="">Loại Acc</a></li>
-          <li><a href="">Lịch Sử</a></li>
+          <li><a href="../index.php">ACC</a></li>
           <li><a href="">Phản hồi</a></li>
-
         </ul>
       </div>
     </div>
@@ -73,15 +70,11 @@
           <th class="active" style="text-align:center">action</th>
           <?php
           $sql = "SELECT khohang_id, khohang_name, gia, Ngaycapnhat FROM khohang";
-
           $result = $connect->query($sql);
-
           if ($result->num_rows > 0) {
             // output dữ liệu trên trang
             while ($row = $result->fetch_assoc()) {
-
           ?>
-
         <tr>
           <td>
             <?php echo $row["khohang_id"]; ?>
@@ -106,9 +99,6 @@
             <button href="" type="button" name="Xoa" class="btn btn-danger">Xóa</button> -->
           </td>
         </tr>
-
-
-
 
     <?php
             }
